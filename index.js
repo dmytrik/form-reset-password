@@ -23,6 +23,7 @@ async function exchangePassword (event) {
             "password": password,
             "token": token
         }
+        form.reset()
         const response = await fetch(url, {
           method: "POST", 
           body: JSON.stringify(data), 
